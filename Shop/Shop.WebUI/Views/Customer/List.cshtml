@@ -1,7 +1,19 @@
 ﻿
 @{
-    ViewBag.Title = "List";
+    ViewBag.Title = "Klienty";
 }
+@model Shop.WebUI.ViewModels.CustomersListViewModel
 
-<h2>List</h2>
+
+@foreach (var cus in Model.CustomersList)
+{
+    <div class="item">
+    <h3>@cus.CompanyName</h3>
+    @cus.ContactName
+    <h4>@cus.Phone</h4>
+        </div>
+}
+<div class="page">
+    @Html.PageLinks(Model.PagingInfo, x=>Url.Action("List",new {page=x}))
+    </div>
 
