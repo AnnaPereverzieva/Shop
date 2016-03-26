@@ -15,6 +15,7 @@ namespace Shop.WebUI.Controllers
         }
         public ActionResult List()
         {
+           // cos
             var list= _customerRepository.GetAll();
             return View();
         }
