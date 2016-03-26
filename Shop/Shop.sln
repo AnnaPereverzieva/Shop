@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.WebUI", "Shop.WebUI\Shop.WebUI.csproj", "{3DB9A700-C161-4F24-A042-20B9425A7A0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{C3368BD0-503D-48CE-95AC-318405DB1D4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{01F459DF-7B44-423B-B3E1-93CF74F168AF}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\ConfigureWebServer.ps1 = PublishScripts\Scripts\ConfigureWebServer.ps1
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{3F16633B-9622-41D8-87BA-43A226CCB348}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\Shop.WebUI.json = PublishScripts\Templates\Shop.WebUI.json
+		PublishScripts\Templates\Shop.WebUI.param.dev.json = PublishScripts\Templates\Shop.WebUI.param.dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Domain", "Shop.Domain\Shop.Domain.csproj", "{F1BD69D2-2BD3-4C9A-91D7-D2AD2481545D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DB9A700-C161-4F24-A042-20B9425A7A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB9A700-C161-4F24-A042-20B9425A7A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB9A700-C161-4F24-A042-20B9425A7A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB9A700-C161-4F24-A042-20B9425A7A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1BD69D2-2BD3-4C9A-91D7-D2AD2481545D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1BD69D2-2BD3-4C9A-91D7-D2AD2481545D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1BD69D2-2BD3-4C9A-91D7-D2AD2481545D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1BD69D2-2BD3-4C9A-91D7-D2AD2481545D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{01F459DF-7B44-423B-B3E1-93CF74F168AF} = {C3368BD0-503D-48CE-95AC-318405DB1D4F}
+		{3F16633B-9622-41D8-87BA-43A226CCB348} = {C3368BD0-503D-48CE-95AC-318405DB1D4F}
+	EndGlobalSection
+EndGlobal
