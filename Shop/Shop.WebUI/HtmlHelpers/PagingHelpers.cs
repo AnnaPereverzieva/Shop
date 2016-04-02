@@ -13,7 +13,6 @@ namespace Shop.WebUI.HtmlHelpers
     {
         public static MvcHtmlString PageLinks(this HtmlHelper html, PagingInfo pagingInfo, Func<int, string> pareUrl)
         {
-            var tt=pareUrl(5);
             StringBuilder result=new StringBuilder();
             for (int i = 0; i < pagingInfo.TotalPages; i++)
             {
@@ -28,3 +27,4 @@ namespace Shop.WebUI.HtmlHelpers
         }
     }
 }
+

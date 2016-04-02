@@ -14,11 +14,11 @@ namespace Shop.WebUI
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            //routes.MapRoute(
-            //    name: null,
-            //    url: "Strona{page}",
-            //defaults: new { controller = "Customer", action = "List"}
-            //);
+            routes.MapRoute(
+                name: null,
+                url: "Strona{page}",
+            defaults: new { controller = "Customer", action = "List" }
+            );
 
             routes.MapRoute(
                 name: "Default",
